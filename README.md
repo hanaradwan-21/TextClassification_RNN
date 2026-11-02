@@ -6,7 +6,7 @@ The notebook walks through the full NLP pipeline: downloading the data, cleaning
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 .
@@ -18,7 +18,7 @@ The notebook walks through the full NLP pipeline: downloading the data, cleaning
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 - **Source:** [BBC News dataset](https://storage.googleapis.com/learning-datasets/bbc-text.csv)
 - **Size:** 2,225 articles
@@ -29,7 +29,7 @@ The dataset is downloaded automatically inside the notebook using `wget`.
 
 ---
 
-## 🔄 Pipeline
+##  Pipeline
 
 1. **Download** the dataset to `/tmp/bbc-text.csv`.
 2. **Define hyperparameters** and a list of 153 English stopwords.
@@ -43,7 +43,7 @@ The dataset is downloaded automatically inside the notebook using `wget`.
 
 ---
 
-## ⚙️ Hyperparameters
+##  Hyperparameters
 
 | Parameter         | Value    | Description                                      |
 |-------------------|----------|--------------------------------------------------|
@@ -58,7 +58,7 @@ The dataset is downloaded automatically inside the notebook using `wget`.
 
 ---
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 ```python
 model = tf.keras.Sequential([
@@ -85,7 +85,7 @@ model.compile(loss='sparse_categorical_crossentropy',
 
 ---
 
-## 📈 Results
+##  Results
 
 After 30 epochs:
 
@@ -98,7 +98,7 @@ The accuracy and loss curves are plotted at the end of the notebook with Matplot
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ### Option 1: Google Colab (recommended)
 1. Open `TextClassification_RNN.ipynb` in [Google Colab](https://colab.research.google.com/).
@@ -123,7 +123,7 @@ jupyter notebook TextClassification_RNN.ipynb
 
 ---
 
-## 🛠️ Requirements
+##  Requirements
 
 - Python 3.8+
 - TensorFlow 2.x
@@ -132,7 +132,7 @@ jupyter notebook TextClassification_RNN.ipynb
 
 ---
 
-## 💡 Possible Improvements
+##  Possible Improvements
 
 - Add a recurrent layer (LSTM / GRU / Bidirectional) to make use of word order, as the file name suggests.
 - Use a larger vocabulary and embedding size.
@@ -143,6 +143,6 @@ jupyter notebook TextClassification_RNN.ipynb
 
 ---
 
-## 📜 License
+##  License
 
 This project is for educational purposes. Feel free to use and modify it.
